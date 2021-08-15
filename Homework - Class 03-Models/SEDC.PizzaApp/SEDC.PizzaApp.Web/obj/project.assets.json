@@ -661,11 +661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\Homework 01-Models\\SEDC.PizzaApp\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web.csproj",
+      "projectUniqueName": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\Homework - Class 03-Models\\SEDC.PizzaApp\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web.csproj",
       "projectName": "SEDC.PizzaApp.Web",
-      "projectPath": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\Homework 01-Models\\SEDC.PizzaApp\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web.csproj",
+      "projectPath": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\Homework - Class 03-Models\\SEDC.PizzaApp\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web.csproj",
       "packagesPath": "C:\\Users\\Andrej\\.nuget\\packages\\",
-      "outputPath": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\Homework 01-Models\\SEDC.PizzaApp\\SEDC.PizzaApp.Web\\obj\\",
+      "outputPath": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\Homework - Class 03-Models\\SEDC.PizzaApp\\SEDC.PizzaApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andrej\\AppData\\Roaming\\NuGet\\NuGet.Config",

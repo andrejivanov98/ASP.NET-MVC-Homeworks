@@ -1,0 +1,12 @@
+﻿@model PizzaViewModel
+
+
+@{string status = "";
+    if (Model.IsOnPromotion)
+    {
+        status = "The pizza is on promotion";
+    }}
+    
+
+
+<h2>@status</h2>

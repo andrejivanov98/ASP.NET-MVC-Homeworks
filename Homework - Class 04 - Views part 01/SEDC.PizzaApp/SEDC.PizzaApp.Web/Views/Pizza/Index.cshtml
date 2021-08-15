@@ -1,0 +1,13 @@
+﻿@model List<PizzaViewModel>
+
+<h2>Pizza list</h2>
+
+@for (int i = 0; i < Model.Count; i++)
+{
+    
+    <ul>
+        <li>Id: @Model[i].Id</li>
+        <li>Name: @Model[i].Name</li>
+        <li>Price: @Model[i].Price</li>
+    </ul>
+}
