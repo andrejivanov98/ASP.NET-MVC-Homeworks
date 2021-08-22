@@ -1,11 +1,81 @@
 ﻿@{
     ViewData["Title"] = "Products";
 }
-@model List<SEDC.E_store.App.Models.ViewModels.ProductViewModel>;
+@using SEDC.E_store.App.Models.ViewModels;
+@using SEDC.E_store.App.Models.Domain;
+@using SEDC.E_store.App.Models.Enums;
+@model ProductViewModel
 
-@foreach (var product in Model) { 
-    <p>Name: @Model</p>
+
+<h2>Phones</h2>
+<br/>
+@foreach (Phone phone in Model.Phones)
+{
+
+  
+    <div class="container">
+        <div class="row row-cols-auto">
+            <div class="col">Name <strong> @phone.Name</strong></div>
+            <div class="col">Description <strong>@phone.Description</strong> </div>
+            <div class="col">Is on promotion <strong> @phone.IsOnPromotion</strong> </div>
+            <div class="col">
+                Reviews @foreach (var review in phone.Reviews)
+                {
+
+                    <p><strong> @review</strong></p>
+                }
+            </div>
+            <a asp-action="PhoneDetails" asp-controller="Phone" asp-route-id="@phone.Id"><strong>Details</strong></a>
+        </div>
+    </div>
+
 }
-    
-    
+
+<h2>Laptops</h2>
+<br/>
+@foreach (Laptop laptop in Model.Laptops)
+{
+
+
+    <div class="container">
+        <div class="row row-cols-auto">
+            <div class="col">Name  <strong> @laptop.Name</strong></div>
+            <div class="col">Description <strong> @laptop.Description</strong></div>
+            <div class="col">Is on promotion <strong> @laptop.IsOnPromotion</strong></div>
+            <div class="col">
+                Reviews @foreach (var review in laptop.Reviews)
+                {
+
+                    <p><strong> @review</strong></p>
+                }
+            </div>
+            <a asp-action="LaptopDetails" asp-controller="Laptop" asp-route-id="@laptop.Id"><strong>Details</strong></a>
+        </div>
+    </div>
+
+}
+
+<h2>Personal computers</h2>
+<br/>
+@foreach (Pc pc in Model.Pcs)
+{
+
+   
+    <div class="container">
+        <div class="row row-cols-auto">
+            <div class="col">Name <strong> @pc.Name</strong></div>
+            <div class="col">Description <strong> @pc.Description</strong></div>
+            <div class="col">Is on promotion <strong> @pc.IsOnPromotion</strong></div>
+            <div class="col">
+                Reviews @foreach (var review in pc.Reviews)
+                {
+
+                    <p> <strong> @review</strong></p>
+                }
+            </div>
+            <a asp-action="PcDetails" asp-controller="Pc" asp-route-id="@pc.Id"><strong>Details</strong></a>
+        </div>
+    </div>
+
+}
 

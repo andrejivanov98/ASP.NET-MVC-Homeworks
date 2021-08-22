@@ -9,8 +9,8 @@ namespace SEDC.E_store.App.Models.ViewModels
 {
     public class ProductViewModel
     {
-       public List<Phone> Phones { get; set; }
-       public List<Laptop> Laptops { get; set; }
-       public List<Pc> Pcs { get; set; }
+       public IEnumerable<Phone> Phones { get; set; }
+       public IEnumerable<Laptop> Laptops { get; set; }
+       public IEnumerable<Pc> Pcs { get; set; }
     }
 }

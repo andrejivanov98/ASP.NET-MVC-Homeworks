@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Andrej's folder\\Private division\\SEDC-private\\My Apps\\SEDC E-store\\SEDC.E-store\\SEDC.E-store.App\\SEDC.E-store.App.csproj",
+      "projectUniqueName": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\SEDC E-store\\SEDC.E-store\\SEDC.E-store.App\\SEDC.E-store.App.csproj",
       "projectName": "SEDC.E-store.App",
-      "projectPath": "D:\\Andrej's folder\\Private division\\SEDC-private\\My Apps\\SEDC E-store\\SEDC.E-store\\SEDC.E-store.App\\SEDC.E-store.App.csproj",
+      "projectPath": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\SEDC E-store\\SEDC.E-store\\SEDC.E-store.App\\SEDC.E-store.App.csproj",
       "packagesPath": "C:\\Users\\Andrej\\.nuget\\packages\\",
-      "outputPath": "D:\\Andrej's folder\\Private division\\SEDC-private\\My Apps\\SEDC E-store\\SEDC.E-store\\SEDC.E-store.App\\obj\\",
+      "outputPath": "D:\\Andrej's folder\\Private division\\SEDC-private\\ASP.NET MVC\\Homeworks\\SEDC E-store\\SEDC.E-store\\SEDC.E-store.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andrej\\AppData\\Roaming\\NuGet\\NuGet.Config",

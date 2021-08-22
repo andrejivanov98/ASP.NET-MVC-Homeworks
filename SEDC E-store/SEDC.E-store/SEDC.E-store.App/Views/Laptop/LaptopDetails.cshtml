@@ -1,0 +1,10 @@
+﻿@using SEDC.E_store.App.Models.ViewModels;
+@model LaptopDetailsViewModel
+
+<h2>@Model.Name</h2>
+<h4><strong>Description </strong>@Model.Description</h4>
+<h4><strong>Reviews: </strong></h4>
+@foreach (var review in Model.Reviews)
+{
+    <p><strong> @review</strong></p>
+}

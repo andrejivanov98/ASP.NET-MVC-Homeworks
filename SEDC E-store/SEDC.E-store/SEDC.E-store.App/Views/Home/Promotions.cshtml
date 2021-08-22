@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Promotions";
+}
+
+@using SEDC.E_store.App.Models.ViewModels;
+@using SEDC.E_store.App.Models.Domain;
+@using SEDC.E_store.App.Models.Enums;
+@model ProductViewModel
+
+<h1>@ViewData["Title"]</h1>
+<h3>Listed products above are on promotion</h3>
+<br/>
+
+<h3>Phones</h3>
+<br/>
+@foreach (Phone phone in Model.Phones)
+{
+    if (phone.IsOnPromotion)
+    {
+        <div class="container">
+            <div class="row row-cols-auto">
+                <div class="col">Name <strong> @phone.Name</strong></div>
+                <div class="col">Description <strong> @phone.Description</strong> </div>
+                <div class="col">
+                    Reviews @foreach (var review in phone.Reviews)
+                    {
+
+                        <p> <strong> @review</strong></p>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+}
+
+<h3>Laptops</h3>
+<br/>
+@foreach (Laptop laptop in Model.Laptops)
+{
+    if (laptop.IsOnPromotion)
+    {
+        <div class="container">
+            <div class="row row-cols-auto">
+                <div class="col">Name <strong> @laptop.Name</strong></div>
+                <div class="col">Description <strong> @laptop.Description</strong> </div>
+                <div class="col">
+                    Reviews @foreach (var review in laptop.Reviews)
+                    {
+
+                        <p> <strong> @review</strong></p>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+}
+
+<h3>Personal computers</h3>
+<br/>
+@foreach (Pc pc in Model.Pcs)
+{
+    if (pc.IsOnPromotion)
+    {
+        <div class="container">
+            <div class="row row-cols-auto">
+                <div class="col">Name <strong> @pc.Name</strong> </div>
+                <div class="col">Description <strong> @pc.Description</strong></div>
+                <div class="col">
+                    Reviews @foreach (var review in pc.Reviews)
+                    {
+
+                        <p> <strong> @review</strong></p>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+}
